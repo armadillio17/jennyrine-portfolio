@@ -1,69 +1,34 @@
-import React, { useState } from 'react';
-import { Award, Cpu, Headphones, Code } from 'lucide-react';
+import { Briefcase, Headphones, Code, GraduationCap } from 'lucide-react';
 
 const About = () => {
-  const [openDetail, setOpenDetail] = useState<string | null>(null);
-
-  const toggleDetail = (key: string) => {
-    setOpenDetail(openDetail === key ? null : key);
-  };
-
-  const detailData = {
-    it: [
-      '1+ year of hands-on IT support experience',
-      'Computer Servicing NC II certified',
-      'Experienced in system maintenance and diagnostics',
-      'Internship in system development and admin support'
-    ],
-    tech: [
-      'Hardware setup & repair (PCs, printers, routers)',
-      'Software installation, patching, and cleanup',
-      'Network setup and basic troubleshooting',
-      'Familiar with operating systems (Windows, Mac)'
-    ],
-    support: [
-      '2 years in customer service (email/chat/in-person)',
-      'Remote support using screen-sharing tools',
-      'Handled inquiries and technical escalations',
-      'Worked in support teams for multiple locations'
-    ],
-    tools: [
-      'Adobe Illustrator & Photoshop',
-      'Canva & Google Workspace',
-      'Windows OS, MS Office Suite',
-      'Facebook Ads Manager',
-      'Basic HTML/CSS and UI design tools'
-    ]
-  };
-
-  const stats = [
+  const experiences = [
     {
-      key: 'it',
-      icon: Award,
-      label: 'Years in IT Support',
-      value: '1+',
-      details: detailData.it
+      icon: Briefcase,
+      title: 'Digital Marketing VA',
+      company: 'Vention LTD (UK)',
+      period: 'Aug 2025 - Jan 2026',
+      highlights: ['Marketing Funnels', 'Webinar Creation', 'Video Production'],
     },
     {
-      key: 'tech',
-      icon: Cpu,
-      label: 'Handled Tech Issues',
-      value: 'Hardware, software, and network troubleshooting',
-      details: detailData.tech
-    },
-    {
-      key: 'support',
-      icon: Headphones,
-      label: 'Customer Service',
-      value: '2 years',
-      details: detailData.support
-    },
-    {
-      key: 'tools',
       icon: Code,
-      label: 'Tools & Technologies Used',
-      value: '10+',
-      details: detailData.tools
+      title: 'IT Technical Assistant',
+      company: 'Sploop',
+      period: 'Apr 2024 - Jun 2025',
+      highlights: ['Team Supervision', 'System Maintenance', 'IT Operations'],
+    },
+    {
+      icon: Headphones,
+      title: 'Customer Support',
+      company: 'Firmoo Opticals',
+      period: 'Aug 2023 - Apr 2024',
+      highlights: ['Customer Service', 'Sales Support', 'Product Guidance'],
+    },
+    {
+      icon: GraduationCap,
+      title: 'Internship',
+      company: 'DOST',
+      period: 'May 2023 - Aug 2023',
+      highlights: ['System Development', 'Hardware Troubleshooting'],
     }
   ];
 
@@ -75,72 +40,86 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-                About Me
-              </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                I'm a passionate IT specialist with a well-rounded background in technical support, customer service, and creative digital solutions.
-                My journey began with a curiosity for how technology works and has grown into a career focused on solving problems and supporting users.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                From providing hands-on hardware and software support to leading support teams and enhancing system performance, I take pride in delivering seamless IT experiences. Along the way, I've developed strong customer service skills and explored my creative side through graphic and web design—making me both tech-savvy and people-oriented.
-              </p>
-            </div>
+    <section id="about" className="py-20 bg-gradient-to-b from-blue-900 to-blue-900/95 relative">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            About Me
+          </h2>
+          <p className="text-gray-300 max-w-2xl mx-auto">
+            Results-driven IT specialist with experience in digital marketing, technical support, and system development.
+            Passionate about providing efficient solutions and outstanding user experiences.
+          </p>
+        </div>
 
-            <div className="space-y-4">
-              <p className="text-gray-600 leading-relaxed">
-                I believe in the impact of reliable tech support, intuitive systems, and meaningful user experiences. When I'm not troubleshooting or optimizing IT operations, you'll find me exploring creative design tools, learning new technologies, or helping others navigate technical challenges.
-              </p>
-            </div>
-
-            <button
-              onClick={scrollToContact}
-              className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
-            >
-              Let's Work Together
-            </button>
+        {/* Stats - Simple inline */}
+        <div className="flex justify-center gap-8 mb-12">
+          <div className="text-center">
+            <div className="text-3xl font-bold text-cyan-400">2+</div>
+            <div className="text-sm text-gray-400">Years Experience</div>
           </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-2 gap-6">
-            {stats.map(({ key, icon: Icon, label, value }) => (
-              <div
-                key={key}
-                onClick={() => toggleDetail(key)}
-                className="bg-gray-50 p-6 rounded-xl text-center hover:bg-indigo-50 transition-colors duration-300 group cursor-pointer"
-              >
-                <Icon className="w-8 h-8 text-indigo-600 mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
-                <div className="text-xs md:text-sm text-gray-600 mb-1">{label}</div>
-                <div className="text-sm md:text-base font-medium text-gray-900">{value}</div>
-              </div>
-            ))}
+          <div className="text-center">
+            <div className="text-3xl font-bold text-purple-400">4</div>
+            <div className="text-sm text-gray-400">NC Certifications</div>
           </div>
+        </div>
 
-          {/* Toggle Panels */}
-          {stats.map(
-            ({ key, details }) =>
-              openDetail === key && (
+        {/* Experience Timeline - Clean design */}
+        <div className="max-w-2xl mx-auto">
+          <div className="space-y-4">
+            {experiences.map((exp, index) => {
+              const Icon = exp.icon;
+              return (
                 <div
-                  key={key}
-                  className="col-span-2 mt-6 bg-indigo-50 p-6 rounded-xl shadow-md transition-all duration-300"
+                  key={index}
+                  className="bg-white/5 backdrop-blur-sm rounded-xl p-5 border border-white/10 hover:bg-white/10 transition-all duration-300"
                 >
-                  <h4 className="text-lg font-semibold text-indigo-700 mb-4">
-                    {stats.find((s) => s.key === key)?.label} - Details
-                  </h4>
-                  <ul className="list-disc list-inside text-gray-700 space-y-1">
-                    {details.map((item, index) => (
-                      <li key={index}>{item}</li>
-                    ))}
-                  </ul>
+                  <div className="flex items-start gap-4">
+                    {/* Icon */}
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/20 to-purple-500/20 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-6 h-6 text-cyan-400" />
+                    </div>
+
+                    {/* Content */}
+                    <div className="flex-1">
+                      <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
+                        <div>
+                          <h4 className="text-white font-semibold">{exp.title}</h4>
+                          <p className="text-gray-400 text-sm">{exp.company}</p>
+                        </div>
+                        <span className="text-xs text-cyan-400 bg-cyan-400/10 px-3 py-1 rounded-full">
+                          {exp.period}
+                        </span>
+                      </div>
+
+                      {/* Tags */}
+                      <div className="flex flex-wrap gap-2 mt-3">
+                        {exp.highlights.map((highlight, hIdx) => (
+                          <span
+                            key={hIdx}
+                            className="text-xs px-2 py-1 rounded-md bg-white/5 text-gray-300 border border-white/10"
+                          >
+                            {highlight}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              )
-          )}
+              );
+            })}
+          </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="text-center mt-10">
+          <button
+            onClick={scrollToContact}
+            className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
+          >
+            Let's Work Together
+          </button>
         </div>
       </div>
     </section>
