@@ -4,13 +4,16 @@
   "version": "0.0.0",
   "homepage": "https://OmegaLuL04.github.io/My-Portfolio/",
   "type": "module",
+  "homepage": "https://OmegaLuL04.github.io/My-Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",
