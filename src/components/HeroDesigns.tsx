@@ -70,7 +70,7 @@ const HeroDesigns = ({ design, scrollToProjects }: HeroDesignProps) => {
                 View My Work
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
-              <a href="/cv.pdf" download className="flex items-center justify-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl font-semibold text-white transition-all">
+              <a href="/jennyrine_palis.pdf" download className="flex items-center justify-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl font-semibold text-white transition-all">
                 Download Resume
               </a>
             </div>
@@ -129,7 +129,7 @@ const HeroDesigns = ({ design, scrollToProjects }: HeroDesignProps) => {
               View My Work
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <a href="/cv.pdf" download className="flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/20 hover:border-white/40 rounded-full font-semibold text-white transition-all">
+            <a href="/jennyrine_palis.pdf" download className="flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/20 hover:border-white/40 rounded-full font-semibold text-white transition-all">
               <Download className="w-5 h-5" />
               Resume
             </a>
@@ -184,7 +184,7 @@ const HeroDesigns = ({ design, scrollToProjects }: HeroDesignProps) => {
               View My Work
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
-            <a href="/cv.pdf" download className="flex items-center justify-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 rounded-xl font-medium text-white transition-all w-full">
+            <a href="/jennyrine_palis.pdf" download className="flex items-center justify-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 rounded-xl font-medium text-white transition-all w-full">
               Download Resume
             </a>
           </div>
@@ -248,7 +248,7 @@ const HeroDesigns = ({ design, scrollToProjects }: HeroDesignProps) => {
               <Sparkles className="w-5 h-5" />
               Explore My Work
             </button>
-            <a href="/cv.pdf" download className="flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/20 hover:border-cyan-400/50 rounded-full font-semibold text-white transition-all">
+            <a href="/jennyrine_palis.pdf" download className="flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/20 hover:border-cyan-400/50 rounded-full font-semibold text-white transition-all">
               Download Resume
             </a>
           </div>
@@ -303,7 +303,7 @@ const HeroDesigns = ({ design, scrollToProjects }: HeroDesignProps) => {
                 View Projects
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-              <a href="/cv.pdf" download className="flex items-center justify-center gap-2 px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl font-semibold text-white transition-all">
+              <a href="/jennyrine_palis.pdf" download className="flex items-center justify-center gap-2 px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl font-semibold text-white transition-all">
                 <Download className="w-5 h-5" />
                 Download Resume
               </a>

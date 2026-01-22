@@ -23,3 +23,11 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Sensitive documents (resume/CV)
+*.pdf
+public/*.pdf
+
+# Firebase
+.firebase/
+.firebaserc
