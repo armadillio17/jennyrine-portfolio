@@ -27,7 +27,7 @@ const HeroDesigns = ({ design, scrollToProjects }: HeroDesignProps) => {
               <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4">
                 <div className="absolute top-0 left-4 right-4 h-px bg-gradient-to-r from-transparent via-cyan-400/50 to-transparent" />
                 <div className="w-52 h-64 md:w-60 md:h-72 rounded-xl overflow-hidden">
-                  <img src="/grad.jpg" alt="Jennyrine Palis Jr" className="w-full h-full object-cover" />
+                  <img src="/grad.webp" alt="Jennyrine Palis Jr" className="w-full h-full object-cover" loading="lazy" />
                   <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-blue-950/80 to-transparent" />
                 </div>
                 <div className="absolute top-2 left-2 w-3 h-3 border-t-2 border-l-2 border-cyan-400/40 rounded-tl" />
@@ -100,7 +100,7 @@ const HeroDesigns = ({ design, scrollToProjects }: HeroDesignProps) => {
           {/* Profile */}
           <div className="relative">
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden border-2 border-white/10 shadow-xl">
-              <img src="/grad.jpg" alt="Jennyrine Palis Jr" className="w-full h-full object-cover" />
+              <img src="/grad.webp" alt="Jennyrine Palis Jr" className="w-full h-full object-cover" loading="lazy" />
             </div>
             <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-green-400 rounded-lg border-4 border-blue-900" />
           </div>
@@ -174,7 +174,7 @@ const HeroDesigns = ({ design, scrollToProjects }: HeroDesignProps) => {
           {/* Profile card */}
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-4 flex items-center justify-center">
             <div className="w-full aspect-square max-w-[200px] rounded-2xl overflow-hidden">
-              <img src="/grad.jpg" alt="Jennyrine Palis Jr" className="w-full h-full object-cover" />
+              <img src="/grad.webp" alt="Jennyrine Palis Jr" className="w-full h-full object-cover" loading="lazy" />
             </div>
           </div>
 
@@ -216,7 +216,7 @@ const HeroDesigns = ({ design, scrollToProjects }: HeroDesignProps) => {
           {/* Profile + Badge row */}
           <div className="flex items-center gap-4 mb-8">
             <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-cyan-400/50">
-              <img src="/grad.jpg" alt="Jennyrine Palis Jr" className="w-full h-full object-cover" />
+              <img src="/grad.webp" alt="Jennyrine Palis Jr" className="w-full h-full object-cover" loading="lazy" />
             </div>
             <div className="flex items-center gap-2 px-4 py-2 bg-white/5 rounded-full border border-white/10">
               <span className="w-2 h-2 bg-green-400 rounded-full" />
@@ -303,10 +303,19 @@ const HeroDesigns = ({ design, scrollToProjects }: HeroDesignProps) => {
                 View Projects
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
+              <a href="/cv.pdf" download className="flex items-center justify-center gap-2 px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl font-semibold text-white transition-all">
+                <Download className="w-5 h-5" />
+                Download Resume
+              </a>
+            </div>
+
+            <div className="flex items-center gap-4 mt-6">
+              <span className="text-sm text-gray-500">Connect</span>
+              <div className="w-8 h-px bg-gray-600" />
               <div className="flex gap-2">
                 {socialLinks.map(({ icon: Icon, href, label }) => (
-                  <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="p-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-gray-400 hover:text-cyan-300 transition-all">
-                    <Icon size={20} />
+                  <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="p-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-gray-400 hover:text-cyan-300 transition-all">
+                    <Icon size={18} />
                   </a>
                 ))}
               </div>
@@ -318,7 +327,7 @@ const HeroDesigns = ({ design, scrollToProjects }: HeroDesignProps) => {
             <div className="relative">
               {/* Main image */}
               <div className="relative w-64 h-80 md:w-72 md:h-96 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-                <img src="/grad.jpg" alt="Jennyrine Palis Jr" className="w-full h-full object-cover" />
+                <img src="/grad.webp" alt="Jennyrine Palis Jr" className="w-full h-full object-cover" loading="lazy" />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-950/60 via-transparent to-transparent" />
               </div>
 

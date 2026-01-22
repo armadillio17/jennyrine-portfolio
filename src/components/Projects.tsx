@@ -187,6 +187,7 @@ const Projects = () => {
                         src={project.image}
                         alt={project.title}
                         className="w-full h-full object-cover"
+                        loading="lazy"
                       />
 
                       {/* Gradient overlay */}
@@ -265,6 +266,7 @@ const Projects = () => {
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-blue-950/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="absolute bottom-0 inset-x-0 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
@@ -326,6 +328,7 @@ const Projects = () => {
               alt={projects[modalImage].title}
               className="max-w-full max-h-[75vh] object-contain rounded-lg"
               onClick={(e) => e.stopPropagation()}
+              loading="lazy"
             />
             <div className="mt-4 text-center">
               <h4 className="text-xl font-semibold text-white">{projects[modalImage].title}</h4>

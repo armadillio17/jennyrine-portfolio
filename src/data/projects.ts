@@ -14,32 +14,32 @@ export const projectCategories: ProjectCategory[] = [
     name: 'Event Design',
     folder: 'event-design',
     images: [
-      { filename: '1.jpg', title: 'All Souls Day' },
-      { filename: '6.jpg', title: 'Tournament Winner' },
+      { filename: '1.webp', title: 'All Souls Day' },
+      { filename: '6.webp', title: 'Tournament Winner' },
     ],
   },
   {
     name: 'Social Media',
     folder: 'social-media',
     images: [
-      { filename: '2.jpg', title: 'Halloween Costume Winner' },
-      { filename: '3.jpg', title: 'Halloween Facebook Posting' },
-      { filename: '4.jpg', title: 'Facebook Posting' },
+      { filename: '2.webp', title: 'Halloween Costume Winner' },
+      { filename: '3.webp', title: 'Halloween Facebook Posting' },
+      { filename: '4.webp', title: 'Facebook Posting' },
     ],
   },
   {
     name: 'Print Design',
     folder: 'print-design',
     images: [
-      { filename: '5.jpg', title: 'Rides Passes' },
+      { filename: '5.webp', title: 'Rides Passes' },
     ],
   },
   {
     name: 'Marketing',
     folder: 'marketing',
     images: [
-      { filename: '7.jpg', title: 'Promotional Post' },
-      { filename: '8.jpg', title: 'Birthday Promos' },
+      { filename: '7.webp', title: 'Promotional Post' },
+      { filename: '8.webp', title: 'Birthday Promos' },
     ],
   },
 ];
