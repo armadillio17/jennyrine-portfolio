@@ -35,7 +35,17 @@ const About = () => {
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      // contactSection.scrollIntoView({ behavior: 'smooth' });
+
+      const headerOffset = 80; // Adjust based on your header height
+      const contactPosition = contactSection.getBoundingClientRect().top;
+      const offsetPosition = contactPosition + window.scrollY - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+
     }
   };
 

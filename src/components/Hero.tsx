@@ -106,14 +106,30 @@ const Hero = () => {
   const scrollToAbout = () => {
     const element = document.getElementById('about');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      // element.scrollIntoView({ behavior: 'smooth' });
+      const headerOffset = 80; // Adjust based on your header height
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
   const scrollToProjects = () => {
     const element = document.getElementById('projects');
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      // element.scrollIntoView({ behavior: 'smooth' });
+      const headerOffset = 80; // Adjust based on your header height
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 

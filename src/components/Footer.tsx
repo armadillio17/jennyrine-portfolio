@@ -14,11 +14,11 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex items-center space-x-2 text-gray-400">
+          {/* <div className="flex items-center space-x-2 text-gray-400">
             <span>Made with</span>
             <Heart className="w-4 h-4 text-cyan-400 fill-current animate-pulse" />
             <span>and lots of coffee</span>
-          </div>
+          </div> */}
         </div>
       </div>
 
